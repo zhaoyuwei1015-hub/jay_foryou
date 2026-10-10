@@ -1,0 +1,34 @@
+# ---------- 依赖 ----------
+node_modules/
+.pnpm-store/
+
+# ---------- 构建产物 ----------
+dist/
+target/
+out/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# ---------- IDE ----------
+.idea/
+*.iml
+.vscode/*.log
+
+# ---------- 日志与临时 ----------
+*.log
+logs/
+work/
+
+# ---------- 本地配置与密钥 ----------
+*.local
+application-local.yml
+.env
+*.pem
+*.key
+
+# ---------- 系统 ----------
+Thumbs.db
+Desktop.ini
+.DS_Store
+
