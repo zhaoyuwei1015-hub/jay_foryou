@@ -12,7 +12,7 @@
 - 数据库：MySQL 8，缓存 Redis
 - AI：待定（不使用 Ollama；后期可能尝试扣子 Coze）
 
-## 目录
+## 目录结构（规划的）
 
 ```
 backend\    后端（Spring Boot）
