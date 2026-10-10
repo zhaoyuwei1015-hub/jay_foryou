@@ -64,24 +64,25 @@
     <div class="box db"><h3>MySQL 8</h3><p>用户、作品、评论等业务数据</p></div>
     <div class="box db"><h3>Redis</h3><p>缓存、点赞收藏计数</p></div>
     <div class="box"><h3>文件存储</h3><p>头像、照片集、音频</p></div>
-    <div class="box ai"><h3>阿 chou AI</h3><p>Ollama 本地大模型</p></div>
+    <div class="box ai"><h3>阿 chou AI</h3><p>方案待定（可能用扣子 Coze）</p></div>
   </div>
 
   <h2>开发阶段路线</h2>
   <table>
     <tr><th>阶段</th><th>做什么</th><th>主要学到</th></tr>
-    <tr><td>0</td><td>建仓库、定规范、进度单</td><td>Git、工程规范</td></tr>
-    <tr><td>1</td><td>后端起服务，第一个接口</td><td>Spring Boot、Maven</td></tr>
-    <tr><td>2</td><td>建库建表，连数据库做增删改查</td><td>SQL、MyBatis-Plus</td></tr>
-    <tr><td>3</td><td>分层 + 统一返回 + 全局异常 + 日志</td><td>工程分层</td></tr>
-    <tr><td>4</td><td>前端起项目，页面调到后端数据</td><td>Vue 3、Vite、Axios</td></tr>
-    <tr><td>5</td><td>第一个完整业务：列表 + 分页 + 详情</td><td>前后端联调</td></tr>
-    <tr><td>6</td><td>注册登录、密码加密、JWT、角色权限</td><td>Spring Security</td></tr>
-    <tr><td>7</td><td>收藏 / 点赞 / 评论 + Redis</td><td>Redis、并发</td></tr>
-    <tr><td>8</td><td>头像与图集上传</td><td>文件上传</td></tr>
-    <tr><td>9</td><td>管理后台 + 数据看板</td><td>CRUD 抽象、权限</td></tr>
-    <tr><td>10</td><td>阿 chou：接入本地大模型、流式回答</td><td>SSE、提示词</td></tr>
-    <tr><td>11</td><td>测试、接口文档、JVM 调优、部署</td><td>JUnit、JVM、Nginx</td></tr>
+    <tr><td>0</td><td>环境、仓库、规范、进度单</td><td>工程地基</td></tr>
+    <tr><td>1</td><td>用 Git 管版本：改动 → 提交 → 推送，看它出现在 GitHub</td><td>Git 完整工作流</td></tr>
+    <tr><td>2</td><td>后端起服务，第一个接口</td><td>Spring Boot、Maven</td></tr>
+    <tr><td>3</td><td>建库建表，连数据库做增删改查</td><td>SQL、MyBatis-Plus</td></tr>
+    <tr><td>4</td><td>分层 + 统一返回 + 全局异常 + 日志</td><td>工程分层</td></tr>
+    <tr><td>5</td><td>前端起项目，页面调到后端数据</td><td>Vue 3、Vite、Axios</td></tr>
+    <tr><td>6</td><td>第一个完整业务：列表 + 分页 + 详情</td><td>前后端联调</td></tr>
+    <tr><td>7</td><td>注册登录、密码加密、JWT、角色权限</td><td>Spring Security</td></tr>
+    <tr><td>8</td><td>收藏 / 点赞 / 评论 + Redis</td><td>Redis、并发</td></tr>
+    <tr><td>9</td><td>头像与图集上传</td><td>文件上传</td></tr>
+    <tr><td>10</td><td>管理后台 + 数据看板</td><td>CRUD 抽象、权限</td></tr>
+    <tr><td>11</td><td>阿 chou：接入 AI 助手（方案待定）</td><td>接口对接、流式回答</td></tr>
+    <tr><td>12</td><td>测试、接口文档、JVM 调优、部署</td><td>JUnit、JVM、Nginx</td></tr>
   </table>
 
   <h2>每个阶段都走同一个闭环</h2>

@@ -15,7 +15,7 @@
 - 前端：Vue 3 + Vite + Vue Router + Pinia + Element Plus + Axios
 - 后端：Spring Boot 3 + Java 17 + Spring Security + JWT + MyBatis-Plus
 - 数据：MySQL 8（主库）、Redis（缓存与计数）
-- AI：Ollama 本地大模型（阿 chou）
+- AI：**待定** —— 本项目不使用 Ollama；后期可能尝试扣子（Coze），到阶段 11 再选型落地
 - 工程化：Git、Maven、JUnit、日志、接口文档、Nginx / Docker（后期）
 
 ## 二、我是什么水平

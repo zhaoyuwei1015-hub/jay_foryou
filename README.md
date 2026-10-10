@@ -10,7 +10,7 @@
 - 前端：Vue 3 + Vite + Vue Router + Pinia + Element Plus
 - 后端：Spring Boot 3 + Java 17 + Spring Security + JWT + MyBatis-Plus
 - 数据库：MySQL 8，缓存 Redis
-- AI：Ollama 本地大模型
+- AI：待定（不使用 Ollama；后期可能尝试扣子 Coze）
 
 ## 目录
 
