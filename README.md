@@ -1,4 +1,6 @@
-# 周杰伦星球（jayverse）
+# 周杰伦星球 · jay_foryou
+
+远程仓库：https://github.com/zhaoyuwei1015-hub/jay_foryou
 
 一个周杰伦主题的全栈网站：作品库、相册、实时新闻、收藏点赞评论，外加一个叫"阿 chou"的 AI 助手，
 以及给管理员用的内容后台。

@@ -19,11 +19,12 @@
 - DBeaver 的配置目录（原本偷偷生成在 C 盘）已迁移到 `D:\dev\dbeaver-home`，并用目录联接指回原位
 - 设置好 git 全局身份：`zhaoyuwei1015-hub` / `zhaoyuwei1015@gmail.com`
 - 卸载 GitHub Desktop（界面纯英文、只能连 GitHub，改用网页版 + 命令行）
+- 修复 DBeaver 每次启动先显示英文再自己重启成中文的问题（`dbeaver.ini` 里加了 `-nl zh`）
+- 确认 MySQL root 密码可用，能正常连上 8.0.42（明文不记录在 git 跟踪的文件里）
 - 完成首次 git 提交
 
 ## 未完成 / 待办
 
-- 确认 MySQL 的 root 密码，能不能连上数据库
 - 把本地仓库推到 GitHub 上的远程仓库（可选，不挡事）
 
 ## 下一步
@@ -40,7 +41,7 @@
 | 数据库客户端 | DBeaver（免费开源，可替代 Navicat） | 免费正版不会被杀毒软件误删；免安装可放 D 盘；导出 CSV/Excel/JSON 都支持 |
 | Git 身份 | `zhaoyuwei1015-hub` / `zhaoyuwei1015@gmail.com` | GitHub Desktop 安装时已自动写入全局配置，沿用即可 |
 | Git 客户端 | 不用桌面客户端，用网页版 + 命令行 | GitHub Desktop 没有中文界面，网页版有中文 |
-| 云端仓库 | 待定 Gitee / GitHub | 先本地用起来，等有内容了再传 |
+| 云端仓库 | GitHub：`zhaoyuwei1015-hub/jay_foryou`（Public、无许可证） | 账号已有、面试官看得多；Public 方便给人看 |
 
 ## 环境清单
 
@@ -55,6 +56,13 @@
 | MySQL 客户端 | DBeaver 26.2.2（主力）+ Workbench 8.0 + VS Code 插件 | `D:\dev\dbeaver`，工作区 `D:\dev\dbeaver-data` |
 | Ollama | 本地模型 deepseek-r1:1.5b | 模型在 C 盘（做阿 chou 时再搬 D 盘） |
 | 未安装 | Redis、Docker、WSL | 用到时再装，现在不影响 |
+
+### MySQL 里已有的数据库（都是以前课程/练习留下的，别乱删）
+
+`dxd20222122189`、`jyx20222122003`、`mydatabase`、`sakila`、`sty20222122001`、
+`user_sql`、`zhaoyuwei`、`zyw`、`zyw20222122125`
+
+本项目计划用的库名：`jay_foryou`（阶段 2 建库时创建，不会动上面这些）
 
 ## 文件清单
 
@@ -75,4 +83,5 @@ D:\第一个项目\
 - GitHub Desktop 界面**没有中文**，也没有语言切换开关；官方一直没做，网上汉化包是第三方改包，风险高。
 - GitHub Desktop 只能连 GitHub，不支持 Gitee；安装位置写死在 C 盘用户目录，无法改路径。
 - 沙箱对 `.git` 目录是只读的，所以 `git add` / `git commit` 这类写操作需要单独授权。
+- DBeaver 冷启动会先按 Windows 系统语言判断界面语言（这台机器给的是 en），然后才读自己的"中文"设置并重启一次，所以会闪一下英文。已在 `D:\dev\dbeaver\dbeaver.ini` 加 `-nl zh` 固定为中文。
 
