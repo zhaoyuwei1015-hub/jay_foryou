@@ -145,6 +145,10 @@ D:\第一个项目\
   如果不小心进去了：按 `Esc`，再敲 `:q!` 回车就能安全退出。
 - **PowerShell 的 Tab 补全不补 git 子命令**（它只补自己的命令和文件名），所以 `git re<Tab>` 没反应。
   Git Bash 开箱自带 git 补全，位置是 `D:\Git\Git\git-bash.exe`。
-- **VS Code 的「图表」默认可能只显示当前分支的历史**，所以开了新分支后图表上看不到分叉（终端里 `git log --graph --all` 是能看见的）。
-  这是显示范围问题，不是 git 数据有问题——把范围切到所有分支即可。
+- **VS Code 的「图表」默认不画全部分支，所以看不到分叉**（终端里 `git log --graph --all` 带了 `--all`，能看见）。
+  图表的"显示范围"出厂值是**「自动」**，含义是"当前分支 + 它在云端的对应分支 + 两条线的分叉点"，
+  所以 `practice2` 那条线压根没被画出来——**是显示范围问题，不是 git 数据有问题**。
+  修法：点图表右上角那个**分支小图标**（VS Code 内部叫 "History Item Reference Picker"，就是"挑要画哪些分支"），
+  在弹出的多选列表里选**「全部」(All)**，或者只勾 `practice2`。选过的范围会被记住
+  （存在 VS Code 的存储键 `scm.graphView.referencesFilter` 里），下次打开还生效。
 
