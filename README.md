@@ -5,7 +5,7 @@
 一个周杰伦主题的全栈网站：作品库、相册、实时新闻、收藏点赞评论，外加一个叫"阿 chou"的 AI 助手，
 以及给管理员用的内容后台。
 
-## 技术栈
+## 技术栈main 分支加的：分支练习用
 
 - 前端：Vue 3 + Vite + Vue Router + Pinia + Element Plus
 - 后端：Spring Boot 3 + Java 17 + Spring Security + JWT + MyBatis-Plus
